@@ -1,0 +1,53 @@
+*{
+  box-sizing: border-box;
+}
+.container{
+  height: 100%;
+}
+
+.home-page{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-head{
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  font-style: italic;
+}
+.main-subhead{
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 48px;
+  font-style: italic;
+}
+
+
+.page{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-gap:20px;
+}
+
+.img{
+  width: 100%;
+}
+
+.frame1{
+  grid-column: 1/ span 6;
+}
+.frame2{
+  grid-column: 7/ span 10;
+}
+.frame3{
+  grid-column: 1/ span 6;
+}
+.frame4{
+  grid-column: 7/ span 10;
+}
+.frame5{
+  grid-column: 1/ span 12;
+}
