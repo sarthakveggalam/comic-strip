@@ -564,3 +564,36 @@ nav a:hover {
         page-break-after: avoid;
     }
 }
+
+@media screen and (min-width: 360px) {
+    .gridComic {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(10, 16vh);
+        grid-gap: 2vh;
+        /* padding-top: 48px; */
+        /* padding-bottom: 55px; */
+      }
+}
+
+@media screen and (min-width: 460px) {
+    .gridComic {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(10, 22vh);
+        grid-gap: 2vh;
+        /* padding-top: 48px; */
+        /* padding-bottom: 55px; */
+      }
+}
+
+@media screen and (min-width: 820px) {
+    .gridComic {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(10, 28vh);
+        grid-gap: 2vh;
+        /* padding-top: 48px; */
+        /* padding-bottom: 55px; */
+      }
+}
