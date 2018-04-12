@@ -4,6 +4,7 @@
 }
 .container{
   height: 100%;
+  background-color: black;
 }
 
 .home-page{
@@ -12,6 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 
 .main-head{
@@ -19,11 +21,13 @@
   font-size: 72px;
   font-weight: 700;
   font-style: italic;
+  color: #fff;
 }
 .main-subhead{
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 48px;
   font-style: italic;
+  color: #fff;
 }
 
 
@@ -31,7 +35,7 @@
   display: grid;
   grid-template-columns: repeat(12,1fr);
   grid-gap:20px;
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
 }
 
@@ -44,8 +48,18 @@
 }
 
 .img{
-  width: 50%;
+  width: 100%;
   /* border: 1px solid red; */
+  clip-path: polygon(0% 0%, 100% 3%, 98% 99%, 3% 93%);
+  
+}
+
+.img1{
+  clip-path: polygon(0% 0%, 100% 3%, 98% 99%, 3% 93%);
+}
+
+.img2{
+  clip-path: polygon(6% 0, 100% 0, 95% 99%, 0 100%);
 }
 
 .buttons{
@@ -82,9 +96,12 @@
 
 .frame1{
   grid-column: 1/ span 6;
+  /* width: 70%; */
+  box-shadow: 25px 25px 0px 5px rgba(94,94,94,1);
 }
 .frame2{
   grid-column: 7/ span 10;
+  /* width: 70%; */
 }
 .frame3{
   grid-column: 1/ span 6;
