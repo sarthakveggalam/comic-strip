@@ -14,8 +14,13 @@
     <div class="home-page">
       <h1 class="main-head">Experimental Web Comics</h1>
       <h4 class="main-subhead">Pushing your experience to the next level</h4>
+      <div class="buttons">
+        <a href=""><button class="button back-button">Back</button></a>
+        <a href="#page1"><button class="button next-button">Next</button></a>
+      </div>
     </div>
-    <div class="page1">
+
+    <div class="page1" id="page1">
       <div class="frame frame1">
         <img src="img/1-1.png" class="img img1" alt="">
       </div>
@@ -31,9 +36,13 @@
       <div class="frame frame5">
         <img src="img/1-5.png" class="img img4" alt="">
       </div>
+      <div class="buttons">
+        <a href=""><button class="button back-button">Back</button></a>
+        <a href="#page2"><button class="button next-button">Next</button></a>
+      </div>
     </div>
 
-    <div class="page2">
+    <div class="page2" id="page2">
       <div class="frame frame1">
         <img src="img/1-1.png" class="img img1" alt="">
       </div>
@@ -51,15 +60,33 @@
       </div>
     </div>
   </div>
+  <script src="smooth-scroll.js"></script>
+  <script>
 
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
   <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+      offset: 60,
+      easing: 'easeInOutCubic'
+    });
+    </script>
+  <script>
     let page = document.querySelector('.page1');
+    let container = document.querySelector('.container');
     if (annyang) {
       // Let's define a command.
       var commands = {
-        'hello': function() {
-            page.style.background = '#bada55';  
+        'next': function(e) {
+          console.log(window.scrollY,e);
+          //container.style.top = window.scrollY + pageYOffset + 'px';
+          // window.style.transition = 'all 1s';
+           window.scrollBy(0, window.innerHeight);     
+         },
+         'back': function(e) {
+          console.log(window.innerHeight);
+          //container.style.top = window.scrollY + pageYOffset + 'px';
+          window.scrollBy(0, -window.innerHeight);
          }
       };
     

@@ -1,5 +1,6 @@
 *{
   box-sizing: border-box;
+  transition: all 1s ease-in;
 }
 .container{
   height: 100%;
@@ -30,6 +31,8 @@
   display: grid;
   grid-template-columns: repeat(12,1fr);
   grid-gap:20px;
+  height: 100vh;
+  position: relative;
 }
 
 
@@ -37,11 +40,45 @@
   display: grid;
   grid-template-columns: repeat(12,1fr);
   grid-gap:20px;
+  /* height: 100vh; */
 }
 
 .img{
-  width: 100%;
+  width: 50%;
+  /* border: 1px solid red; */
 }
+
+.buttons{
+  position: absolute;
+  bottom:10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+}
+
+
+.button{
+  border: 1px solid blue;
+  }
+
+.back-button{
+  padding: 24px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.next-button{
+    padding: 24px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
 
 .frame1{
   grid-column: 1/ span 6;
