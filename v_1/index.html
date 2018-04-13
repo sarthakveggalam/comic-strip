@@ -1,0 +1,331 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700i" rel="stylesheet">
+        <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+        <script>
+            AFRAME.registerComponent('alpha-test', {
+              dependencies: ['material'],
+              init: function () {
+                this.el.getObject3D('mesh').material.alphaTest = 0.5;
+              }
+            });
+          </script>  
+          
+          <style>
+            @font-face {
+              font-family: 'Gagalin-Regular.otf';
+              src: url('./fonts/Gagalin-Regular.otf');
+            }
+          </style>
+
+
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">h1.title</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">nav ul li a</a></li>
+                        <li><a href="#">nav ul li a</a></li>
+                        <li><a href="#">nav ul li a</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div> -->
+
+        <!-- Website Slogan -->
+
+        <div class="gridSlogan Slogan">
+            <div class="positionExperimental">experimental</div>
+            <div class="positionWeb">web</div>
+            <div class="positionComics">comics</div>
+            <div class="positionHub">hub</div>
+        </div>
+        
+              <div class="buttons">
+                <a href=""><button class="button back-button">▲</button></a>
+                <a href="#next-section"><button class="button next-button">▼</button></a>
+              </div>
+                <!-- Tutorial -->
+
+                <div class="gridTutorial Tutorial">
+                    <div class="position1">
+                        <p>1.</p>
+                        <p>Enable voice input for page turning. Say "next" and "back" for alternative navigation.</p>
+                    </div>
+                    <div class="position2">
+                        <p>2.</p>
+                        <p>Use your phone as a window to the 3D frames.</p>
+                        
+                    </div>
+                    <div class="position3">
+                        <p>3.</p>
+                        <p>The experience is optimized for mobile on portrait mode with 320px width.</p>
+                    </div>
+                    
+                    <div class="position4">
+                        <p>4.</p>
+                        <p>If the 3D frames do not work properly, try using Firefox web browser.</p>
+                    </div>
+        
+                    <div class="pattern5">
+                        <img src="img/bg-pattern.png"></img>
+                    </div>
+        
+                    <div class="pattern6">
+                        <img src="img/bg-pattern.png"></img>
+                    </div>
+        
+                    <div class="pattern7">
+                        <img src="img/bg-pattern.png"></img>
+                    </div>
+        
+                    <div class="pattern8">
+                        <img src="img/bg-pattern.png"></img>
+                    </div>
+        
+                    <div class="pattern9">
+                        <img src="img/bg-pattern.png"></img>
+                    </div>
+        
+                    
+                    
+                </div>
+
+        <!-- Comic Title -->
+
+        <div class="comicTitle" id="next-section">
+            <p>comic no.1</p>
+            <p>Princess Mononoke</p>
+            <p>by</p>
+            <p>Hayao Miyazaki</p>
+            <p>(Script and Director)</p>
+        </div>
+        
+        <p class="enjoy">enjoy<p>
+
+
+        <!-- The Super Duper Grid -->
+
+        <div id="cover" class="gridComic" id="next-section">
+            <img class="item0_1" src="img/0_1.jpg"></img>
+        </div>
+
+        <div id="1" class="gridComic">
+            <img class="item1_1" src="img/1_1.jpg"></img>
+            <img class="item1_2" src="img/1_2.jpg"></img>
+            <img class="item1_3" src="img/1_3.jpg"></img>
+            <img class="item1_4" src="img/1_4.jpg"></img>
+            <img class="item1_5" src="img/1_5.jpg"></img>
+            
+            <div class="buttons">
+                    <a href=""><button class="button back-button">▲</button></a>
+                    <a href="#next-section"><button class="button next-button">▼</button></a>
+            </div>
+        </div>
+
+        <div id="2" class="gridComic">
+            <img class="item2_1" src="img/2_1.jpg"></img>
+            <img class="item2_2" src="img/2_2.jpg"></img>
+            <img class="item2_3" src="img/2_3.jpg"></img>
+            <img class="item2_4" src="img/2_4.jpg"></img>
+        </div>
+
+        <div id="3" class="gridComic">
+            <img class="item3_1" src="img/3_1.jpg"></img>
+            <img class="item3_2" src="img/3_2.jpg"></img>
+            <img class="item3_3" src="img/3_3.jpg"></img>
+            <img class="item3_4" src="img/3_4.jpg"></img>
+            <img class="item3_5" src="img/3_5.jpg"></img>
+        </div>
+
+        <div id="4" class="gridComic">
+            <img class="item4_1" src="img/4_1.jpg"></img>
+        </div>
+
+        <div class="gridComic">
+          <img class="item5_1" src="img/5_1.png"></img>
+        </div>
+
+        <div class="gridComic">
+            <img class="item6_1" src="img/6_1.png"></img>
+        </div>
+
+        <div class="aframegrid" id="next-section">
+            <!-- a-frame 7 -->
+            <a-scene background="color: #000000" class="aframebox" embedded>
+                <a-assets>
+                    <audio id="leaves" src="https://cdn.glitch.com/566c6394-2118-44ed-bff2-6065be665d03%2F423377__troycavas__walking-on-dry-leaves.wav?1523575987503" preload="auto"></audio>
+                 </a-assets>
+              
+              <a-entity id="animal" geometry="primitive:plane;width:0.263;height:0.266" 
+                        material="src:https://cdn.glitch.com/566c6394-2118-44ed-bff2-6065be665d03%2F7_2.png?1523575097302" position="0 1.734 -1.704" scale="5 5 1"></a-entity>
+        
+              <a-entity id="tower" geometry="primitive:plane;width:0.249;height:0.272" 
+                        material="src:https://cdn.glitch.com/566c6394-2118-44ed-bff2-6065be665d03%2F7_3.png?1523575100624" position="0.908 3.416 -1.65" rotation="45.09177847679579 -20.855663742761966 0" scale="5 5 1"></a-entity>
+              
+              <a-entity id="monster" geometry="primitive:plane;width:0.479;height:0.292" 
+                        material="src:https://cdn.glitch.com/566c6394-2118-44ed-bff2-6065be665d03%2F7_1.png?1523575101084" position="0 1.734 1.571" rotation="0 180.02333923010465 0" scale="5 5 1">
+                  <a-animation attribute="position" from="0 1.734 10" to="0 1.734 1.571" dur="10000" direction="normal" easing="linear" repeat="indefinite"></a-animation>
+              </a-entity>
+              
+              <a-entity id="monstereyes" geometry="primitive:plane;width:0.487;height:0.166"  visible="false"
+                        material="src:https://cdn.glitch.com/566c6394-2118-44ed-bff2-6065be665d03%2F7_5.png?1523575100886" position="0 1.734 1" rotation="0 180.02333923010465 0" scale="5 5 1"  repeat="indefinite">
+              
+              
+                  <a-animation attribute="visible" begin="10000" to="true"  repeat="indefinite" ></a-animation>
+                  <a-animation attribute="visible" begin="20000" to="false"  repeat="indefinite" ></a-animation>
+                
+                           
+              </a-entity>
+              
+              <a-entity sound="src: #leaves; autoplay:false"></a-entity>  
+              
+            <!-- all you need is love. beta-test always. 
+              hahaha 
+              i'm done here, gonna go for the next-->
+              
+              <!--Lights -->
+            
+              
+              <a-light type="ambient" intensity="0.7" color="#fff" light="intensity:1"></a-light>
+              
+              <!-- Camera -->
+        
+              <a-entity position="0 1.6 0" camera look-controls>
+              <a-entity></a-entity>
+                <a-cursor opacity="0.2"></a-cursor>
+              </a-entity>
+        
+            </a-scene>
+
+        </div>
+
+        <div id="8" class="gridComic">
+            <img class="item8_1" src="img/8_1.png"></img>
+            <img class="item8_2" src="img/8_2.png"></img>
+            <img class="item8_3" src="img/8_3.png"></img>
+            <img class="item8_4" src="img/8_4.png"></img>
+            <img class="item8_5" src="img/8_5.png"></img>
+            <img class="item8_6" src="img/8_6.png"></img>
+        </div>
+
+
+
+        <!-- <div class="aframegrid"> -->
+            <!-- a-frame 9 -->
+            <!-- <a-scene background="color: #000" embedded>
+      
+                <a-entity id="9_1" geometry="primitive:plane;width:0.223;height:0.164" material="src:https://cdn.glitch.com/8554c4a6-d483-4acf-9900-787f14474a1c%2F9_2.png?1523577251994" position="0.743 1.734 -1.704" scale="5 5 1" rotation="-20.798367963248882 0 0"></a-entity>
+                <a-entity id="9_2" geometry="primitive:plane;width:0.241;height:0.163" material="src:https://cdn.glitch.com/8554c4a6-d483-4acf-9900-787f14474a1c%2F9_1.png?1523577252190" position="0.333 0.946 -1.704" scale="5 5 1" rotation="-25.6112134423478 0 0"></a-entity>
+                <a-entity id="9_3" geometry="primitive:plane;width:0.222;height:0.162" material="src:https://cdn.glitch.com/8554c4a6-d483-4acf-9900-787f14474a1c%2F9_4.png?1523577252442" position="0 0.08 -1.704" scale="5 5 1" rotation="-41.65403170601085 0 0"></a-entity>
+                <a-entity id="9_4" geometry="primitive:plane;width:0.239;height:0.177" material="src:https://cdn.glitch.com/8554c4a6-d483-4acf-9900-787f14474a1c%2F9_3.png?1523577252686" position="-0.347 -1.065 -1.704" scale="7 7 1" rotation="-59.702202252631785 0 0"></a-entity>
+                <a-entity id="9_5" geometry="primitive:plane;width:0.468;height:0.354" material="src:https://cdn.glitch.com/8554c4a6-d483-4acf-9900-787f14474a1c%2F9_5.png?1523577255196" position="-1 -3.123 -1.704" scale="9 9 1" rotation="-90.01166961505233 180.02333923010465 180.02333923010465"></a-entity>
+                  Lights
+                
+                  
+                  <a-light type="ambient" intensity="0.7" color="#fff" light="intensity:1"></a-light>
+                  
+                  Camera
+            
+                  <a-entity position="0 1.6 0" camera look-controls>
+                  <a-entity></a-entity>
+                    <a-cursor opacity="0.2"></a-cursor>
+                  </a-entity>
+            
+                </a-scene> -->
+        <!-- </div> -->
+
+        <div id="10" class="gridComic">
+            <img class="item10_1" src="img/10_1.png"></img>
+            <img class="item10_2" src="img/10_2.png"></img>
+            <img class="item10_3" src="img/10_3.png"></img>
+            <img class="item10_4" src="img/10_4.png"></img>
+            <img class="item10_5" src="img/10_5.png"></img>
+        </div>
+
+        <!-- <div class="footer-container">
+            <footer class="wrapper">
+                <h3>footer</h3>
+            </footer>
+        </div> -->
+        <script src="./js/smooth-scroll.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+            <script>
+                var scroll = new SmoothScroll('a[href*="#"]', {
+                offset: 60,
+                easing: 'easeInOutCubic'
+                });
+            </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+        <script>
+            let page = document.querySelector('.page1');
+            let container = document.querySelector('.container');
+            if (annyang) {
+              // Let's define a command.
+        
+                var next = function(e) {
+                  console.log(window.scrollY,e);
+                   window.scrollBy(0, window.innerHeight);
+                  //  scrollTo()     
+                 }
+        
+                var back = function(e) {
+                console.log(window.innerHeight);
+                window.scrollBy(0, -window.innerHeight);
+                }
+        
+              //   var scrollTo = function(identifier, speed) {
+              //   $('html, body').animate({
+              //       scrollTop: window.innerHeight
+              //   }, speed || 1000);
+              // }
+              
+              var commands = {
+                'next': next,
+                'back': back  
+              };
+        
+        
+              
+              // annyang.debug();
+              // Add our commands to annyang
+              annyang.addCommands(commands);
+            
+              // Start listening.
+              annyang.start();
+
+              if(!annyang.isListening()){
+                  console.log("we arent listening")
+              }
+            }
+            else {
+              console.log("annyang not found");
+            }
+            </script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
