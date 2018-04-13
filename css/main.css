@@ -174,9 +174,61 @@ nav a:hover {
   padding-bottom: 48px;
 }
 
-/* .mainTitle {
-    font-size: 24px;
-} */
+/* Tutorial */
+
+.gridTutorial {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) ;
+    grid-template-rows: repeat(12, 36px);
+    grid-gap: 10px;
+    padding-bottom: 36px;
+  }
+
+.Tutorial {
+    font-size: 12px; 
+    font-family: 'Roboto Mono', monospace;
+}
+
+.position1 {
+    grid-area: 1 / 2 / 4 / 4;
+}
+
+.position2 {
+    grid-area: 4 / 4 / 6 / 6;
+}
+
+.position3 {
+    grid-area: 6 / 2 / 8 / 4;
+}
+
+.position4 {
+    grid-area: 8 / 4 / 12 / 6;
+}
+
+.pattern5 {
+    
+    grid-area: 1 / 1 / 4 / 6;
+}
+
+.pattern6 {
+
+    grid-area: 2 / 5 / 5 / 7;
+}
+
+.pattern7 {
+
+    grid-area: 4 / 3 / 5 / 7;
+}
+
+.pattern8 {
+ 
+    grid-area: 7 / 4 / 9 / 7;
+}
+
+.pattern9 {
+    
+    grid-area: 10 / 2 / 11 / 7;
+}
 
 .positionExperimental {
     grid-column: 3 / 6 ;
@@ -255,7 +307,7 @@ nav a:hover {
 }
 
 .item1_4 {
-    grid-area: 4 / 8 / 8 / 13; 
+    grid-area: 4 / 7 / 8 / 13; 
 }
 
 .item1_5 {
